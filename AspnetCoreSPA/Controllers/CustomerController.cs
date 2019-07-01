@@ -68,9 +68,8 @@ namespace AspnetCoreSPATemplate.Controllers
 
             qtxt = qtxt != null ? qtxt : string.Empty;
             return Get().Where(x => (x.First_name != null && x.First_name.ToLower().Contains(qtxt.ToLower()))
-                            || (x.Last_name != null && x.Last_name.ToLower().Contains(qtxt.ToLower()))
-                            || (x.Email != null && x.Email.ToLower().Contains(qtxt.ToLower()))
-                            || (x.Phone1 != null && x.Phone1.ToLower().Contains(qtxt.ToLower())));
+           || (x.Last_name != null && x.Last_name.ToLower().Contains(qtxt.ToLower()))|| (x.Email != null && x.Email.ToLower().Contains(qtxt.ToLower()))
+           || (x.Phone1 != null && x.Phone1.ToLower().Contains(qtxt.ToLower())));
         }
 
     }
